@@ -1,5 +1,5 @@
-# EIP-4907
-EIP-4907 is an extension of ERC-721. It proposes an additional role **user** and a valid duration indicator **expires**. It allows users and developers manage the use right more simple and efficient.
+# ERC-721P;
+Extension to the ERC721 standard, that introduces multi-privilege NFT. The NFT can be separated into multiple privileges from one to any for renting or sale without transferring ownership.
 
 ### Tools
 * [Visual Studio Code](https://code.visualstudio.com/)
