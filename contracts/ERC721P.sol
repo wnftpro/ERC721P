@@ -81,7 +81,7 @@ contract ERC721P is ERC721, IERC721P {
 
     function _isDelegatorOrHolder(address delegator, uint256 tokenId, uint privId) internal virtual view returns (bool) {
         address holder = privilegeBook[tokenId].privilegeEntry[privId].user;
-        return (delegator == holder || privilegeDelegator[holder][delegator]);
+         return (delegator == holder || isApprovedForAll(holder, delegator) || privilegeDelegator[holder][delegator]);
     }
 
     function supportsInterface(bytes4 interfaceId) public override virtual view returns (bool) {
